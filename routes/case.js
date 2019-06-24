@@ -53,7 +53,7 @@ router.put('/case', function (req, res, next) {
     })
 })
 router.delete('/case', function (req, res, next) {
-  api.remove({ id: Number(req.query.id )})
+  api.remove({ id: Number(req.query.id)})
     .then(result => {
       res.status(200);
       res.json({ msg: '删除成功' })
